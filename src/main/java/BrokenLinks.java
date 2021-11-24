@@ -1,4 +1,5 @@
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -11,19 +12,19 @@ import java.util.List;
 public class BrokenLinks {
     public static void main(String[] args) {
         System.setProperty("webdriver.chrome.driver", "C:\\WebDrayver\\chromedriver.exe");
-        WebDriver driver;
-            String homePage = "http://www.zlti.com";
-            String url;
-            HttpURLConnection huc;
-            int respCode;
+        WebDriver driver =  new ChromeDriver();;
+        String homePage = "http://www.zlti.com";
+        String url;
+        HttpURLConnection huc;
+        int respCode;
 
-            driver = new ChromeDriver();
 
-            driver.manage().window().maximize();
+        driver.manage().window().setSize(new Dimension(900, 500));
 
-            driver.get(homePage);
+        driver.get(homePage);
 
-            List<WebElement> links = driver.findElements(By.tagName("a"));
+        List<WebElement> links = driver.findElements(By.tagName("a"));
+        WebElement f = driver.findElement(By.xpath("\\div a"));
 
         for (WebElement link : links) {
 

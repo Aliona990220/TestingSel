@@ -12,7 +12,8 @@ public class Find {
         WebElement textDemo = driver.findElement(By.xpath("//*[text()='Write and Earn']"));
         if(textDemo.isDisplayed()) {
             System.out.println("Element found using text");
-        } else System.out.println("Element not found"); driver.quit();
+        } else
+            System.out.println("Element not found"); driver.quit();
     }
     }
 
