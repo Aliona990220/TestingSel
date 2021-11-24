@@ -3,15 +3,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import java.util.List;
-
-public class ProjectElSurch {
+public class PrNew {
     public static void main(String[] args) {
         System.setProperty("webdriver.chrome.driver", "C:\\WebDrayver\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("https://ru.wikipedia.org/wiki/");
-        WebElement element = driver.findElement(By.xpath("//input[@class='vector-search-box-input']"));
-        element.click();
+        WebElement elements = driver.findElements(By.xpath("//div[@class='main-top-right main-plainlist']//span")).get(0);
+        elements.click();
         driver.quit();
     }
+
 }
