@@ -14,8 +14,8 @@ public class WikiBut {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1000));
         driver.findElement(By.xpath("//input[@id='searchButton']")).click();
 
-        driver.get("https://github.com");
-        WebElement button = driver.findElement(By.xpath("//form[@class='mx-auto mx-md-0 col-5-max js-signup-form position-relative z-2']//button"));
-        button.submit();
+//        driver.get("https://github.com");
+//        WebElement button = driver.findElement(By.xpath("//form[@class='mx-auto mx-md-0 col-5-max js-signup-form position-relative z-2']//button"));
+//        button.submit();
     }
 }
