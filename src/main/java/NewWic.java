@@ -11,10 +11,9 @@ public class NewWic {
         driver.get("https://ru.wikipedia.org/wiki/");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1000));
         driver.findElement(By.xpath("//input[@id='searchInput']")).sendKeys("Удод");
-        driver.findElement(By.xpath("//input[@id='searchButton']"));
         System.out.println(driver.findElement(By.xpath("//div[@id='simpleSearch']/input")).getAttribute("value"));
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1000));
-        driver.findElement(By.xpath("//div[@id='simpleSearch']/input")).clear();
+        driver.findElement(By.xpath("//input[@id='searchButton']")).click();
+
 
     }
 }
