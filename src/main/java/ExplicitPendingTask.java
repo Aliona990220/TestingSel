@@ -13,6 +13,8 @@ public class ExplicitPendingTask {
         driver.get("https://ru.wikipedia.org/");
         WebDriverWait wait = new WebDriverWait(driver, 10);
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.id("//input[@name='search']")));
+        element.click();
+        driver.quit();
 
 
 
