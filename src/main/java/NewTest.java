@@ -13,7 +13,6 @@ public class NewTest {
         WebElement login = driver.findElements(By.xpath("//div[@class='_1C8R7Ed8PZh8800Q5y1A']//a")).get(2);
         Thread.sleep(3000);
         login.click();
-        Thread.sleep(2000);
         WebElement email = driver.findElements(By.xpath("//div[@class='_2ze0hXfd8Fj8W5fmqJC6']//input")).get(0);
         email.click();
         email.sendKeys("Aliona");
