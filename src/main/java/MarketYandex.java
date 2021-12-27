@@ -26,6 +26,6 @@ public class MarketYandex {
            System.out.println("FAIL!");
        }
 
-       }
+    }
 
 }
