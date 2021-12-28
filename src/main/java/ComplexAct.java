@@ -23,6 +23,7 @@ public class ComplexAct {
 
         Action action = actions.clickAndHold(link).moveToElement(element).release().build();
         action.perform();
+        driver.quit();
 
 
 
