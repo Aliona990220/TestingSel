@@ -13,6 +13,7 @@ public class JavaSelScript {
 //        executor.executeScript("alert('HELLO WORLD!');");
         executor.executeScript("window.scrollBy(0, 1000)","");
         executor.executeScript("window.scrollBy(0, -1000)","");
+        driver.quit();
 
     }
 }
