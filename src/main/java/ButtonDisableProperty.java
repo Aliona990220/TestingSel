@@ -8,14 +8,12 @@ public class ButtonDisableProperty {
         System.setProperty("webdriver.chrome.driver", "C:\\WebDrayver\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.get("https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_pushbutton_disabled2");
-        Thread.sleep(2000);
-        WebElement button1 = driver.findElement(By.xpath("//button[@id = 'myBtn']"));
-        System.out.println(button1.isDisplayed());
+        driver.get("https://www.w3schools.com/jsref/prop_pushbutton_disabled.asp");
+        Thread.sleep(5000);
+        WebElement button2 = driver.findElement(By.xpath("//a[@id = 'w3loginbtn']"));
 
-        WebElement button2 = driver.findElement(By.xpath("//a[@id = 'getwebsitebtn']"));
-        System.out.println(button2.isEnabled());
+        System.out.println(button2.isDisplayed());
 
-        driver.quit();
+//        driver.quit();
     }
 }
