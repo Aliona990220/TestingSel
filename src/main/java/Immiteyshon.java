@@ -23,6 +23,6 @@ public class Immiteyshon {
     private static void keyPress() {
         System.out.println("VK_SHIFT");
     }
-    
+
 }
 
