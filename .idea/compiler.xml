@@ -12,7 +12,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="TestSel" options="--add-exports jdk.javadoc/jdk.javadoc.internal.doclets.toolkit.util=ALL-UNNAMED" />
+      <module name="TestSel" options="" />
     </option>
   </component>
 </project>

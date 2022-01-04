@@ -1,10 +1,11 @@
-
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 public class Screenshots {
@@ -16,13 +17,13 @@ public class Screenshots {
         driver.get("https://ru.wikipedia.org/");
 
         File screen = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-//        try {
+        try {
 
-//            FileUtils.copyFile(screen, new File("C:\\work\\screen1.png"));
+            FileUtils.copyFile(screen, new File("C:\\work\\screen1.png"));
 
-//        }catch (IOException e){
-//            e.printStackTrace();
-//        }
+        }catch (IOException e){
+            e.printStackTrace();
+        }
 
 
 
